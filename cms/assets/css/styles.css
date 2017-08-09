@@ -163,6 +163,39 @@ body {
     text-align: center;
 }
 
+/* Table */
+
+#cs-bg {
+    background: #fcba21 !important;
+    border-color: #f05321 !important;
+    color: #fff;
+}
+
+/* btn */
+
+#kage-bunshin {
+    background: #024da1 !important;
+}
+
+/* Footer */
+
+#footer {
+    background: #024da1 !important;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+/* Modals */
+
+.list-group-img:hover {
+    opacity: 0.5;
+}
+
+.modal-image {
+    width: 500px;
+}
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {

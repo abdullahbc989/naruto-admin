@@ -5,7 +5,7 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Naruto Admin Area | Dashboard</title>
+        <title>Naruto Admin Area | Friends</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -27,9 +27,9 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Chakra Admin</a></li>
+                        <li><a href="index.html">Chakra Admin</a></li>
                         <li><a href="tails.html">Tails</a></li>
-                        <li><a href="shadow_clones.html">Shadow Clones</a></li>
+                        <li class="active"><a href="shadow_clones.html">Shadow Clones</a></li>
                         <li><a href="friends.html">Friends</a></li>
                         <li><a href="ramen_funds.html">Ramen Funds</a></li>
                     </ul>
@@ -47,7 +47,7 @@
                     <div class="col-md-10">
                         <h1>
                             <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
-                            Inner Naruto <small>Manage Your Eight Trigram Seal</small>
+                            Inner Naruto <small>Manage Your Shadow Clones</small>
                         </h1>
                     </div>
                     <div class="col-md-2">
@@ -74,7 +74,8 @@
         <section id="breadcrumb">
             <div class="container">
                 <ol class="breadcrumb">
-                    <li class="active">Dashboard</li>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li class="active">Tails</li>
                 </ol>
             </div>
         </section>
@@ -154,81 +155,23 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-9">
+
                         <div class="panel panel-default">
                             <div class="panel-heading main-color-bg">
-                                <h1 class="panel-title">Seal Overview</h1>
+                                <h1 class="panel-title">Shadow Clones</h1>
                             </div>
                             <div class="panel-body">
-                                <div class="col-md-3">
-                                    <div class="well dash-box">
-                                        <h2><i class="fa fa-ravelry" aria-hidden="true"></i>
-                                            9</h2>
-                                        <h4>Tails</h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="well dash-box">
-                                        <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                                            9000+</h2>
-                                        <h4>Shadow Clones</h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="well dash-box">
-                                        <h2><i class="fa fa-heart" aria-hidden="true"></i>
-                                            12,334</h2>
-                                        <h4>Friends</h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="well dash-box">
-                                        <h2>
-                                            <!-- Knitted Frog icon by Icons8 -->
-                                            <img src="https://png.icons8.com/knitted-frog/win10/48" title="Knitted Frog" width="32" height="32">
-                                            0<i class="fa fa-jpy" aria-hidden="true"></i></h2>
-                                        <h4>Ramen Funds</h4>
-                                    </div>
-                                </div>
+                                <button onclick="addClones()" id="kage-bunshin" class="btn" style="color:#f072ac; font-weight: bolder;">
+                                    KAGE BUNSHIN NO JUTSU!!!
+                                </button>
                             </div>
-                        </div>
 
-                        <!-- Latest Users -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="cs-bg">
-                                <h3 class="panel-title" >Latest Friends</h3>
-                            </div>
-                            <div class="panel-body">
-                                <table class="table table-hover">
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Friended</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Toneri Ōtsutsuki</td>
-                                        <td>totsutsuki@gmail.com</td>
-                                        <td>Dec 6, 2014</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sumire Kakei</td>
-                                        <td>kakei@yahoo.com</td>
-                                        <td>April 5, 2017</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Hagoromo Ōtsutsuki</td>
-                                        <td>hotsutsuki@gmail.com</td>
-                                        <td>Sep 5, 2013</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Itachi Uchiha</td>
-                                        <td>iuchiha@hotmail.com</td>
-                                        <td>Mar 25, 2010 </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
 
+                    <!-- end col-md-9 -->
+                    </div>
+                    <!-- end row -->
                     </div>
                 </div>
             </div>
@@ -297,5 +240,12 @@
         <script>
             CKEDITOR.replace( 'editor1' );
         </script>
+
+        <!-- Used to include HTML Snippets from other files -->
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script>
+            w3.includeHTML();
+        </script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

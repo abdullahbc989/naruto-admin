@@ -5,7 +5,7 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Naruto Admin Area | Dashboard</title>
+        <title>Naruto Admin Area | Tails</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -27,8 +27,8 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Chakra Admin</a></li>
-                        <li><a href="tails.html">Tails</a></li>
+                        <li><a href="index.html">Chakra Admin</a></li>
+                        <li class="active"><a href="tails.html">Tails</a></li>
                         <li><a href="shadow_clones.html">Shadow Clones</a></li>
                         <li><a href="friends.html">Friends</a></li>
                         <li><a href="ramen_funds.html">Ramen Funds</a></li>
@@ -47,7 +47,7 @@
                     <div class="col-md-10">
                         <h1>
                             <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
-                            Inner Naruto <small>Manage Your Eight Trigram Seal</small>
+                            Inner Naruto <small>Manage Your Tails</small>
                         </h1>
                     </div>
                     <div class="col-md-2">
@@ -74,7 +74,8 @@
         <section id="breadcrumb">
             <div class="container">
                 <ol class="breadcrumb">
-                    <li class="active">Dashboard</li>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li class="active">Tails</li>
                 </ol>
             </div>
         </section>
@@ -157,75 +158,128 @@
                     <div class="col-md-9">
                         <div class="panel panel-default">
                             <div class="panel-heading main-color-bg">
-                                <h1 class="panel-title">Seal Overview</h1>
+                                <h1 class="panel-title">Tails Overview</h1>
                             </div>
                             <div class="panel-body">
-                                <div class="col-md-3">
-                                    <div class="well dash-box">
-                                        <h2><i class="fa fa-ravelry" aria-hidden="true"></i>
-                                            9</h2>
-                                        <h4>Tails</h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="well dash-box">
-                                        <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                                            9000+</h2>
-                                        <h4>Shadow Clones</h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="well dash-box">
-                                        <h2><i class="fa fa-heart" aria-hidden="true"></i>
-                                            12,334</h2>
-                                        <h4>Friends</h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="well dash-box">
-                                        <h2>
-                                            <!-- Knitted Frog icon by Icons8 -->
-                                            <img src="https://png.icons8.com/knitted-frog/win10/48" title="Knitted Frog" width="32" height="32">
-                                            0<i class="fa fa-jpy" aria-hidden="true"></i></h2>
-                                        <h4>Ramen Funds</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Latest Users -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="cs-bg">
-                                <h3 class="panel-title" >Latest Friends</h3>
-                            </div>
-                            <div class="panel-body">
-                                <table class="table table-hover">
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Friended</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Toneri Ōtsutsuki</td>
-                                        <td>totsutsuki@gmail.com</td>
-                                        <td>Dec 6, 2014</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sumire Kakei</td>
-                                        <td>kakei@yahoo.com</td>
-                                        <td>April 5, 2017</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Hagoromo Ōtsutsuki</td>
-                                        <td>hotsutsuki@gmail.com</td>
-                                        <td>Sep 5, 2013</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Itachi Uchiha</td>
-                                        <td>iuchiha@hotmail.com</td>
-                                        <td>Mar 25, 2010 </td>
-                                    </tr>
-                                </table>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input id="filterTails" class="form-control" type="text" placeholder="Filter Tails...">
+                                    </div>
+                                </div>
+
+                                 <div class="panel panel-default">
+                                     <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+                                         <h4 class="panel-title">
+                                             <a href="#collapseListGroup1" class="" role="button" data-toggle="collapse"
+                                                aria-expanded="true" aria-controls="collapseListGroup1">
+                                                 Initial Jinchuriki Form
+                                             </a>
+                                         </h4>
+                                     </div>
+                                     <div class="panel-collapse collapse" role="tabpanel" id="collapseListGroup1"
+                                          aria-labelledby="collapseListGroupHeading1" aria-expanded="false" style="">
+                                         <ul class="list-group">
+                                             <li class="list-group-item">
+                                                 <a type="button" data-toggle="modal" data-target="#init_jin">
+                                                    <img class="list-group-img" src="assets/imgs/Initial_jinchuriki_form.png"/>
+                                                 </a>
+                                             </li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                                    <!-- end of panel-group -->
+
+                                <div class="panel panel-default">
+                                     <div class="panel-heading" role="tab" id="collapseListGroupHeading2">
+                                         <h4 class="panel-title">
+                                             <a href="#collapseListGroup2" class="" role="button" data-toggle="collapse"
+                                                aria-expanded="true" aria-controls="collapseListGroup2">
+                                                 Version 1 - Demon Fox Cloak
+                                             </a>
+                                         </h4>
+                                     </div>
+                                     <div class="panel-collapse collapse" role="tabpanel" id="collapseListGroup2"
+                                          aria-labelledby="collapseListGroupHeading2" aria-expanded="false" style="">
+                                         <ul class="list-group">
+                                             <li class="list-group-item">
+                                                 <h4>One Tail</h4>
+                                                 <a type="button" data-toggle="modal" data-target="#init_v1_1">
+                                                    <img class="list-group-img" src="assets/imgs/v1_1.png"/>
+                                                 </a>
+                                             </li>
+                                             <li class="list-group-item">
+                                                 <h4>Four Tails</h4>
+                                                 <a type="button" data-toggle="modal" data-target="#init_v1_4">
+                                                    <img class="list-group-img" src="assets/imgs/v1_4.png"/>
+                                                 </a>
+                                             </li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                                    <!-- end of panel-group -->
+
+                                <div class="panel panel-default">
+                                     <div class="panel-heading" role="tab" id="collapseListGroupHeading3">
+                                         <h4 class="panel-title">
+                                             <a href="#collapseListGroup3" class="" role="button" data-toggle="collapse"
+                                                aria-expanded="true" aria-controls="collapseListGroup3">
+                                                 Version 2 - Demon Fox Endoskeleton
+                                             </a>
+                                         </h4>
+                                     </div>
+                                     <div class="panel-collapse collapse" role="tabpanel" id="collapseListGroup3"
+                                          aria-labelledby="collapseListGroupHeading2" aria-expanded="false" style="">
+                                         <ul class="list-group">
+                                             <li class="list-group-item">
+                                                 <h4>Four Tails</h4>
+                                                 <a type="button" data-toggle="modal" data-target="#init_v2_4">
+                                                    <img class="list-group-img" src="assets/imgs/v2_4.png"/>
+                                                 </a>
+                                             </li>
+                                             <li class="list-group-item">
+                                                 <h4>Five Tails</h4>
+                                                 <a type="button" data-toggle="modal" data-target="#init_v2_5">
+                                                    <img class="list-group-img" src="assets/imgs/v2_5.png"/>
+                                                 </a>
+                                             </li>
+                                             <li class="list-group-item">
+                                                 <h4>Six Tails</h4>
+                                                 <a type="button" data-toggle="modal" data-target="#init_v2_6">
+                                                    <img class="list-group-img" src="assets/imgs/v2_6.png"/>
+                                                 </a>
+                                             </li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                                    <!-- end of panel-group -->
+
+                                <div class="panel panel-default">
+                                     <div class="panel-heading" role="tab" id="collapseListGroupHeading4">
+                                         <h4 class="panel-title">
+                                             <a href="#collapseListGroup4" class="" role="button" data-toggle="collapse"
+                                                aria-expanded="true" aria-controls="collapseListGroup4">
+                                                 Partial Transformation
+                                             </a>
+                                         </h4>
+                                     </div>
+                                     <div class="panel-collapse collapse" role="tabpanel" id="collapseListGroup4"
+                                          aria-labelledby="collapseListGroupHeading4" aria-expanded="false" style="">
+                                         <ul class="list-group">
+                                             <li class="list-group-item">
+                                                 <h4>Partial Transformation</h4>
+                                                 <a type="button" data-toggle="modal" data-target="#init_partial_trans">
+                                                    <img class="list-group-img" src="assets/imgs/partial_trans.png"/>
+                                                 </a>
+                                             </li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                                    <!-- end of panel-group -->
+                                </div>
+
+
+
                             </div>
                         </div>
 
@@ -291,11 +345,28 @@
             </div>
         </div>
 
+        <!-- Initial Jinchuriki State -->
+        <div w3-include-html="assets/includes/init_jin.html"></div>
+        <div w3-include-html="assets/includes/init_v1_1.html"></div>
+        <div w3-include-html="assets/includes/init_v1_4.html"></div>
+        <div w3-include-html="assets/includes/init_v2_4.html"></div>
+        <div w3-include-html="assets/includes/init_v2_5.html"></div>
+        <div w3-include-html="assets/includes/init_v2_6.html"></div>
+        <div w3-include-html="assets/includes/init_v2_7.html"></div>
+        <div w3-include-html="assets/includes/init_partial_trans.html"></div>
+        <div w3-include-html="assets/includes/init_tailed_beast.html"></div>
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script>
             CKEDITOR.replace( 'editor1' );
+        </script>
+
+        <!-- Used to include HTML Snippets from other files -->
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script>
+            w3.includeHTML();
         </script>
     </body>
 </html>
